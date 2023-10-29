@@ -227,6 +227,7 @@ nav {
     max-width: 1440px;
     margin: auto;
     margin: 50px auto;
+    padding: 20px;
 }
 
 .left-main {
@@ -530,4 +531,50 @@ body {
 
 .bg {
     background-color: rgb(255, 245, 211);
+}
+
+@media screen and (max-width:1218px) {
+        .main{
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .left-main{
+           width: 100%;
+           display: flex;
+           gap: 50px;
+           /* flex-direction: row; */
+        }
+        .right-main{
+            width: 80%;
+        }
+        .main-left-top{
+            width: 30%;
+            min-width: 300px;
+        }
+        hr{
+            display: none;
+        }
+        .card{
+            height: 100%;
+        }
+        .card iframe{
+            height: 100%;
+        }
+        .main-left-bottom{
+            width: 70%;
+        }
+}
+
+@media screen and (max-width:658px) {
+    .left-main{
+        display: none;
+    }
+    .all-book-container{
+        margin: auto;
+        width: 100%;
+    }
+    .book-container{
+        flex-grow: 1;
+    }
 }
