@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Api</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="navbar">
+        <nav>
+            <a href="./index.html">
+                <div class="logo">
+                    <lottie-player src="https://lottie.host/e2019c8d-0520-4fee-b829-3752c9a4685f/JS6FR6D7H4.json"
+                        background="##ffffff" speed="1" style="width: 70px; height: 50px" loop autoplay direction="1"
+                        mode="normal"></lottie-player>
+                    <span>Books</span>
+                </div>
+            </a>
+            <div class="nav-right">
+                <div class="toggel-outer">
+                    <div class="toggel-inner"></div>
+                </div>
+                <div class="button">
+                    <button>SIGN UP <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="main">
+        <div class="left-main">
+            <div class="main-left-top">
+                <h1>ALL CATEGORIES</h1>
+
+            </div>
+
+            <hr>
+            <div class="main-left-bottom">
+                <h1>Audio Book Summary</h1>
+                <div class="card">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/27McrUnGt2zJJe7CcdAtYc?utm_source=generator"
+                        width="100%" height="500" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                    <!-- <iframe src="" frameborder="0"></iframe> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="right-main">
+            <h1 class="heading" id="heading">Best Sellers <span class="lastWrd">Books</span></h1>
+            <!-- <div class="all-book-container"> -->
+            <!-- <h5>ADVICE HOW-TO AND MISCELLANEOUS</h5> -->
+            <!-- <div class="allBooks">
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <div class="auth">
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                </div> -->
+            <!-- <div class="SeeMore-button"> <button>See more</button></div> -->
+
+            <!-- </div> -->
+
+            <!-- <div class="book-container">
+                <h5>ADVICE HOW-TO AND MISCELLANEOUS</h5>
+                <div class="allBooks">
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                </div>
+                <div class="SeeMore-button"> <button>See more</button></div>
+               
+            </div>
+            <div class="book-container">
+                <h5>ADVICE HOW-TO AND MISCELLANEOUS</h5>
+                <div class="allBooks">
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                    <div class="book-container">
+                        <div class="book">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="">
+                            <div class="hoverText">
+                                QuickView
+                            </div>
+                        </div>
+                        <h5>SWEET ENOUGH</h5>
+                        <h6>author name</h6>
+                    </div>
+                </div>
+                <div class="SeeMore-button"> <button>See more</button></div>
+               
+            </div> -->
+        </div>
+    </section>
+
+    <section class="login">
+        <div class="loginCard ">
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+            <i><lord-icon class="cls" src="https://cdn.lordicon.com/nqtddedc.json" trigger="hover"
+                    colors="primary:#ff8400" style="width:40px;height:40px">
+                </lord-icon></i>
+            <form action="" class="form_input animate__animated">
+                <input type="text" placeholder="NAME">
+                <input type="email" placeholder="EMAIL">
+                <input type="password" placeholder="PASSWORD">
+                <button class="signUp">SIGN UP</button>
+            </form>
+
+            <form action="" class="loginInToACC animate__animated">
+                <input type="text" placeholder="EMAIL">
+                <input type="password" placeholder="PASSWORD">
+                <button class="loginBtn">LOG IN</button>
+            </form>
+
+            <div>
+                <button class="signUp2">SIGN UP</button>
+                <button class="signin">SIGN IN</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="popSection">
+        <div class="popUp">
+            <i>close</i>
+            <div class="popup-top">
+                <img src="https://storage.googleapis.com/du-prd/books/images/9781501110375.jpg" alt="">
+                <div class="detail">
+                    <h3>Book name</h3>
+                    <h5>Author</h5>
+                    <p class="description">Descriptin</p>
+                    <div class="logo">
+                        <a href=""><i class="fa-brands fa-amazon"></i></a>
+                        <a href=""><i class="fa-solid fa-book-open"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-bottom">
+                <button class="addToCart">ADD TO SHOPPING LIST</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+    <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
