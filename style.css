@@ -281,7 +281,8 @@ nav {
 .allBooks {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
     width: 90%;
     margin: auto;
     gap: 30px;
@@ -554,15 +555,18 @@ body {
             flex-direction: column;
             margin: auto;
         }
+        .all-book-container{
+            width: 100%;
+        }
 
         .left-main{
            width: 100%;
-           display: flex;
+           display: none;
            gap: 50px;
            /* flex-direction: row; */
         }
         .right-main{
-            width: 80%;
+            width: 100%;
         }
         .main-left-top{
             width: 30%;
@@ -592,5 +596,10 @@ body {
     }
     .book-container{
         flex-grow: 1;
+    }
+}
+@media screen and (max-width:432px) {
+    .nav-right{
+        display: none;
     }
 }
