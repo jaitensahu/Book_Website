@@ -3,6 +3,10 @@ let SeeMoreBtn = document.querySelectorAll(".SeeMore-button button");
 let allpara = document.querySelectorAll(".main-left-top p");
 let quickView = document.querySelectorAll(".book");
 let allBooks=document.querySelectorAll(".book-container")
+let loader=document.querySelector(".loader");
+let err=document.querySelector(".loader h1");
+let imgload=document.querySelector(".imgLoader")
+// err.style.display="none";
 
 async function fetchCategory() {
   let data = await fetch(
@@ -13,6 +17,7 @@ async function fetchCategory() {
 }
 
 function appendCategoryList(result) {
+
   result.forEach((element) => {
     let para = document.createElement("p");
     para.innerText = element.list_name;
@@ -22,16 +27,26 @@ function appendCategoryList(result) {
   });
 }
 fetchCategory();
+
 document
   .querySelector(".main-left-top h1")
   .addEventListener("click", fetchBook);
 
 async function fetchBook() {
-  let data = await fetch(
-    " https://books-backend.p.goit.global/books/top-books"
-  );
-  let result = await data.json();
-  categoryResult(result);
+  try {
+    let url=" https://books-backend.p.goit.global/books/top-books"
+    let data = await fetch(url);
+    if (!data.ok) {
+      throw new Error(`Failed to fetch data from ${url}`);
+  }
+    let result = await data.json();
+    loader.style.display="none"
+    categoryResult(result);
+  } catch (error) {
+    imgload.style.display="none"
+    err.style.display="block";
+  }
+  
 }
 fetchBook();
 
